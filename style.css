@@ -29,20 +29,30 @@ body{
     border-radius: 5px;
     box-shadow: 0px 6px 15px rgba(204, 204, 204, 0.486);
     padding: 15px;
+    max-width: 300px;
 
 }
 
 .card-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 25px;
     padding: 25px;
+    width: 100%
 
+}
+
+.card p{
+    margin-top: 15px;
+    line-height: 25px;
 }
 
 .card img{
     float: right;
+    margin-top: 25px;
 }
 
 .supervisor-card{
@@ -59,4 +69,9 @@ body{
 
 .calculator-card{
     border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.content-container{
+    max-width: 300px;
+    text-align: center;
 }

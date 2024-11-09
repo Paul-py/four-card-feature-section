@@ -21,7 +21,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 15px;
+    padding: 75px 15px;
 }
 
 main {
@@ -43,13 +43,13 @@ main {
 
 .card-container{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: stretch;
     gap: 25px;
     padding: 25px;
     width: 100%
+    
 
 }
 

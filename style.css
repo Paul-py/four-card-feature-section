@@ -20,6 +20,7 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 75px 15px;
 }
@@ -27,19 +28,12 @@ body{
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     max-width: 1100px;
 }
 
-.card{
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0px 6px 15px rgba(204, 204, 204, 0.486);
-    padding: 15px;
-    max-width: 300px;
-
-}
 
 .card-container{
     display: flex;
@@ -50,15 +44,43 @@ main {
     padding: 25px;
     width: 100%
     
+}
+
+.card{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 6px 15px rgba(204, 204, 204, 0.486);
+    padding: 25px;
+    max-width: 350px;
 
 }
+
 
 .card p{
     margin-top: 15px;
     line-height: 25px;
 }
 
-.card img{
+p{
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+
+h2{
+    color: hsl(234, 12%, 34%);
+}
+
+h3{
+    color: hsl(234, 12%, 34%);
+    font-size: 1.3rem;
+}
+
+#heading{
+    font-weight: 200;
+    color: hsl(231, 6%, 57%);
+}
+
+img{
     float: right;
     margin-top: 25px;
 }
@@ -82,4 +104,46 @@ main {
 .content-container{
     max-width: 300px;
     text-align: center;
+    margin-top: 75px;
+}
+
+@media only screen and (min-width: 940px){
+    .card-container{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+    }
+
+    .calculator-card{
+        grid-area: 2 / 3 / 4 / 4;
+    }
+
+    .karma-card{
+        grid-area: 3 / 2 / 5 / 3;
+    }
+
+    .supervisor-card{
+        grid-area: 2 / 1 / 4 / 2;
+    }
+
+    .teambuilder-card{
+        grid-area: 1 / 2 / 3 / 3;
+    }
+
+    body{
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .content-container{
+        max-width: 450px;
+        margin-bottom: 25px;
+    }
 }
